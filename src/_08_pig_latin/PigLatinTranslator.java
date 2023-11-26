@@ -40,9 +40,10 @@ public class PigLatinTranslator implements ActionListener {
 		JButton buttonPressed = (JButton) e.getSource();
 		
 		if (buttonPressed == convertButton) {
+			pigLatinInput.setText(translateEnglishToPigLatin(englishInput.getText()));
 			
 		} else {
-			
+			englishInput.setText(translatePigLatinToEnglish(pigLatinInput.getText()));
 		}
 	}
     /**
